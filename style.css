@@ -1,10 +1,14 @@
 
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+
 body{
     background-color: #F2F2F2;
+    font-family: 'Lato', ;
 }
 
 h2{
-    font-family: NeueHaasUnicaW1G-Black;
+    font-weight: 700;
     font-size: 36px;
     color: #F2F2F2;
     letter-spacing: 0;
