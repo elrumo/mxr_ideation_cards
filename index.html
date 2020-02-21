@@ -14,33 +14,33 @@
     <div class="home-wrapper">
         
         <div class="card">
+            <img id="oppImage" src="assets/opportunity/0_opp.jpeg" alt="">
             <div id="shuffleOpp" onclick="randomOpp()" class="card-warpper opp">
                 <div class="text-card-wrapper">
                     <i class="fas fa-plus icon-card"></i>
                     <h2>Opportunity</h2>
                 </div>
             </div>
-            <img id="oppImage" src="assets/opportunity/0_opp.jpeg" alt="">
         </div>
 
         <div class="card">
+            <img id="chaImage" src="assets/challange/0_cha.jpeg" alt="">
             <div id="shuffleOpp" onclick="randomCha()" class="card-warpper challange">
                 <div class="text-card-wrapper">
                     <i class="fas fa-minus icon-card"></i>
                     <h2>Challenge</h2>
                 </div>
             </div>
-            <img id="chaImage" src="assets/challange/0_cha.jpeg" alt="">
         </div>
 
         <div class="card">
+            <img id="qImage" src="assets/question/0_q.jpeg" alt="">
             <div id="shuffleOpp" onclick="randomQ()" class="card-warpper question">
                 <div class="text-card-wrapper">
                     <i class="fas fa-question icon-card"></i>
                     <h2>Question</h2>
                 </div>
             </div>
-            <img id="qImage" src="assets/question/0_q.jpeg" alt="">
         </div>
 
     </div>
@@ -66,6 +66,10 @@
             document.getElementById("qImage").src = "assets/question/" + newSrc
         }
 
+        randomOpp()
+        randomCha()
+        randomQ()
+        
     </script>
 </body>
 
