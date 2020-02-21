@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/46823b1806.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <div class="home-wrapper">
+        
+        <div class="card">
+            <div id="shuffleOpp" onclick="randomOpp()" class="card-warpper opp">
+                <div class="text-card-wrapper">
+                    <i class="fas fa-plus icon-card"></i>
+                    <h2>Opportunity</h2>
+                </div>
+            </div>
+            <img id="oppImage" src="assets/opportunity/0_opp.jpeg" alt="">
+        </div>
+
+        <div class="card">
+            <div id="shuffleOpp" onclick="randomCha()" class="card-warpper challange">
+                <div class="text-card-wrapper">
+                    <i class="fas fa-minus icon-card"></i>
+                    <h2>Challange</h2>
+                </div>
+            </div>
+            <img id="chaImage" src="assets/challange/0_cha.jpeg" alt="">
+        </div>
+
+        <div class="card">
+            <div id="shuffleOpp" onclick="randomQ()" class="card-warpper question">
+                <div class="text-card-wrapper">
+                    <i class="fas fa-question icon-card"></i>
+                    <h2>Question</h2>
+                </div>
+            </div>
+            <img id="qImage" src="assets/question/0_q.jpeg" alt="">
+        </div>
+
+    </div>
+
+    <script>
+
+        function getRandomInt(max) {
+                return Math.floor(Math.random() * Math.floor(max));
+            }
+        
+        function randomOpp(){
+            var newSrc = getRandomInt(51) + "_opp.jpeg"
+            document.getElementById("oppImage").src = "assets/opportunity/" + newSrc
+        }
+
+        function randomCha(){
+            var newSrc = getRandomInt(25) + "_cha.jpeg"
+            document.getElementById("chaImage").src = "assets/challange/" + newSrc
+        }
+
+        function randomQ(){
+            var newSrc = getRandomInt(18) + "_q.jpeg"
+            document.getElementById("qImage").src = "assets/question/" + newSrc
+        }
+
+    </script>
+</body>
+
+</html>
