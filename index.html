@@ -65,19 +65,36 @@
                 return Math.floor(Math.random() * Math.floor(max));
             }
         
+        function changeImg(max, id, sufix, path){
+            var newSrc = getRandomInt(max) + sufix
+            document.getElementById(id).src = path + newSrc    
+        }
+        
         function randomOpp(){
-            var newSrc = getRandomInt(51) + "_opp.jpeg"
-            document.getElementById("oppImage").src = "assets/opportunity/" + newSrc
+            var sufix = "_opp.jpeg"
+            var max = 51
+            var path = "assets/opportunity/"
+            changeImg(max, "oppImage1", sufix, path)
+            changeImg(max, "oppImage2", sufix, path)
+            changeImg(max, "oppImage3", sufix, path)
         }
 
         function randomCha(){
-            var newSrc = getRandomInt(25) + "_cha.jpeg"
-            document.getElementById("chaImage").src = "assets/challange/" + newSrc
+            var sufix = "_cha.jpeg"
+            var max = 25
+            var path = "assets/challange/"
+            changeImg(max, "chaImage1", sufix, path)
+            changeImg(max, "chaImage2", sufix, path)
+            changeImg(max, "chaImage3", sufix , path)
         }
 
         function randomQ(){
-            var newSrc = getRandomInt(18) + "_q.jpeg"
-            document.getElementById("qImage").src = "assets/question/" + newSrc
+            var sufix = "_q.jpeg"
+            var max = 18
+            var path = "assets/question/"
+            changeImg(max, "qImage1", sufix, path)
+            changeImg(max, "qImage2", sufix, path)
+            changeImg(max, "qImage3", sufix, path)
         }
 
         randomOpp()
